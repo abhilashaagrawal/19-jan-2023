@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bouncing ball</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .ball{
+                width: 200px;
+                height: 200px;
+                background: red;
+                border-radius: 200px;
+                animation-name: xyz;
+                animation-duration: 0.8s;
+                animation-timing-function: ease-in;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                display: inline-block;
+            }
+            @keyframes xyz{
+                from{
+                       transform:translate(0px,0px)
+                }
+                to{
+                       transform: translate(0px,520px);
+                }
+            }
+            .ball1{
+                background: green;
+                animation-delay: 0.2s;
+            }
+            .ball2{
+                background: pink;
+                animation-delay: 0.4s;
+            }
+            .ball3{
+                background: purple;
+                animation-delay: 0.6s;
+            }
+            .ball4{
+                background: orange;
+                animation-delay: 0.8s;
+            }
+            .ball5{
+                background: yellow;
+                animation-delay: 1s;
+            }
+            .ball6{
+                background: blue;
+                animation-delay: 1.2s;
+            }
+           
+        </style>
+    </head>
+    <body>
+         <div class="ball"></div>
+         <div class="ball ball1"></div>
+         <div class="ball ball2"></div>
+         <div class="ball ball3"></div>
+         <div class="ball ball4"></div>
+         <div class="ball ball5"></div>
+         <div class="ball ball6"></div>
+         
+    </body>
+</html>
